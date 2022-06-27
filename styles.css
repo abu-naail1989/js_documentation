@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@400;700&family=Grand+Hotel&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+#main-doc {
+  font-family: "Catamaran", "sans-serif";
+}
+
+.nav-link,
+nav h1 {
+  display: block;
+  margin: 15px;
+  padding: 5px 0;
+  text-transform: capitalize;
+  color: gray;
+  font-size: 24px;
+  text-align: left;
+  border-bottom: 2px solid gray;
+}
+nav h1 {
+  font-size: 36px;
+  font-family: cursive;
+}
+.nav-link:hover {
+  transform: translateX(50px);
+  box-shadow: 0 2px black;
+  color: white;
+  background: rgb(76, 53, 53);
+}
+
+.main-section {
+  display: block;
+  margin: 100px;
+  margin-left: 200px;
+  font-size: 20px;
+  font-family: "Catamaran", "sans-serif";
+}
+header {
+  font-family: cursive;
+  font-size: 24px;
+  text-align: left;
+}
+p,
+code {
+  margin-left: 30px;
+}
+#navbar {
+  position: fixed;
+  min-width: 390px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100vh;
+  border-right: solid rgba(0, 22, 22, 0.4);
+  border-color: rgba(0, 22, 22, 0.4);
+}
+nav {
+  display: block;
+}
+#navbar ul {
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  margin-bottom: 110px;
+  padding: 20px;
+}
+main {
+  display: block;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 2;
+  background-color: rgb(247, 247, 247);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.circle {
+  list-style-type: circle;
+}
