@@ -61,6 +61,7 @@ a {
   max-width: 85%;
 
   margin: 5rem 50px;
+  background: rgb(246, 243, 243);
 }
 header {
   font-family: cursive;
@@ -104,9 +105,34 @@ code {
     transform: translateX(15px);
   }
   75% {
-    transform: translateX(20px);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(15px);
+  }
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1200px) {
+  #navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100vh;
+    border-right: solid rgba(0, 22, 22, 0.4);
+    border-color: rgba(0, 22, 22, 0.4);
+  }
+  .main-section {
+    display: block;
+    margin-top: 20px;
+    margin-left: 320px;
+    max-width: 78%;
+    font-size: 20px;
+    font-family: "Catamaran", "sans-serif";
+  }
+  .nav-link {
+    padding: 10px;
   }
 }
