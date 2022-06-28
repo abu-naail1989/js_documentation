@@ -7,10 +7,21 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-a {
+body {
+  background: #cbe058;
+}
+a:not(.ref) {
   text-decoration: none;
-  color: gray;
   cursor: pointer;
+  /* padding: 15px px; */
+  background: rgb(207, 12, 12);
+  color: #555;
+  max-width: 450px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  clip-path: polygon(0% 0%, 57% 1%, 83% 50%, 55% 99%, 0% 100%);
 }
 
 #main-doc {
@@ -40,17 +51,17 @@ a {
   padding: 0.45rem;
   width: 100%;
   border: 1px solid black;
-  padding-left: 50px;
+  padding-left: 10px;
 }
 .nav-link {
   display: block;
 }
-.nav-link:hover {
-  color: white;
-  background: rgb(34, 28, 28);
-
+a:not(.ref):hover {
+  color: #fff;
+  background: #a7b612;
   box-shadow: 0 2px black;
-  width: 200px;
+  width: 365px;
+
   animation: bounce 2s ease infinite;
 }
 
@@ -61,7 +72,7 @@ a {
   max-width: 85%;
 
   margin: 5rem 50px;
-  background: rgb(246, 243, 243);
+  /* background: rgb(246, 243, 243); */
 }
 header {
   font-family: cursive;
@@ -116,10 +127,10 @@ code {
 @media screen and (min-width: 1200px) {
   #navbar {
     position: fixed;
-    min-width: 300px;
-    top: 0px;
+    /* min-width: 300px; */
+    top: 20px;
     left: 0px;
-    width: 300px;
+    width: 350px;
     height: 100vh;
     border-right: solid rgba(0, 22, 22, 0.4);
     border-color: rgba(0, 22, 22, 0.4);
@@ -127,8 +138,8 @@ code {
   .main-section {
     display: block;
     margin-top: 20px;
-    margin-left: 320px;
-    max-width: 78%;
+    margin-left: 380px;
+    max-width: 70%;
     font-size: 20px;
     font-family: "Catamaran", "sans-serif";
   }
