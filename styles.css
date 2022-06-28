@@ -48,6 +48,65 @@ a {
 .nav-link:hover {
   color: white;
   background: rgb(34, 28, 28);
-  transform: translateX(50px);
+
   box-shadow: 0 2px black;
+  width: 200px;
+  animation: bounce 2s ease infinite;
+}
+
+/* MAIN SECTION */
+.main-section {
+  display: block;
+  width: 100%;
+  max-width: 85%;
+
+  margin: 5rem 50px;
+}
+header {
+  font-family: cursive;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+section > p {
+  margin-left: 15px;
+}
+section > ul > li {
+  margin-left: 50px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 2;
+  background-color: rgb(247, 247, 247);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.circle {
+  margin-left: 25px;
+}
+.ref {
+  color: red;
+}
+.ref:hover {
+  font-size: 34px;
+}
+/* ANIMATION */
+@keyframes bounce {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  75% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
